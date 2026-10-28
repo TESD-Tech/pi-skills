@@ -1,0 +1,18 @@
+{
+  "name": "@tesd-tech/pi-skills",
+  "version": "0.1.0",
+  "description": "Cross-harness skill discovery for the pi coding agent: find, read, and run SKILL.md skills from .claude/.codex/.opencode folders — without per-run approval prompts.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": ["pi-package", "pi", "skills", "claude-code", "opencode"],
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "scripts": {
+    "check": "tsc --noEmit index.ts --module esnext --moduleResolution bundler --target es2022 --strict --skipLibCheck"
+  }
+}
